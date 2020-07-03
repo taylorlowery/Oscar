@@ -7,7 +7,11 @@ import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TicketsComponent } from './tickets/tickets.component';
-import { TicketEditComponent } from './ticket-edit/ticket-edit.component';
+import { TicketEditComponent } from './tickets/ticket-edit/ticket-edit.component';
+import {DropdownDirective} from './shared/Directives/dropdown.directive';
+import {RouterModule} from '@angular/router';
+import { TicketDetailComponent } from './tickets/ticket-detail/ticket-detail.component';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +21,14 @@ import { TicketEditComponent } from './ticket-edit/ticket-edit.component';
     HomeComponent,
     DashboardComponent,
     TicketsComponent,
-    TicketEditComponent
+    TicketEditComponent,
+    DropdownDirective,
+    TicketDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
