@@ -1,1 +1,16 @@
-<p>ticket-detail works!</p>
+<h1>Ticket Detail</h1>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>{{ ticket.subject }}</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{ ticket.description }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="onEditTicket()">Edit Ticket</button>
+  </div>
+</div>
