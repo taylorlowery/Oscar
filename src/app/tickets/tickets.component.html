@@ -1,6 +1,11 @@
 <div class="row">
   <div class="col-md-5 col-xs-12">
-    <app-tickets-list></app-tickets-list>
+    <div class="row">
+      <app-tickets-list></app-tickets-list>
+    </div>
+    <div class="row">
+      <button style="margin-top:10px" class="btn btn-success" (click)="onNewTicket()">New Ticket</button>
+    </div>
   </div>
   <div class="col-md-7 col-xs-12">
     <router-outlet></router-outlet>

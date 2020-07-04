@@ -1,1 +1,34 @@
-<p>ticket-edit works!</p>
+<h1>{{ editMode ? "Edit" : "New" }} Ticket</h1>
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="ticketForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="form-control" formControlName="subject">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+              type="text"
+              name="description"
+              id="description"
+              formControlName="description"
+              class="form-control"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="!ticketForm.valid">Save</button>
+    </form>
+  </div>
+</div>
