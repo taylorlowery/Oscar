@@ -1,0 +1,6 @@
+<h3>Tickets</h3>
+<div class="row">
+  <div class="col-xs-12">
+    <a *ngFor="let ticket of tickets; let i = index" class="list-group-item clearfix" [routerLink]="i">{{ ticket.subject }}</a>
+  </div>
+</div>

@@ -12,6 +12,7 @@ import {DropdownDirective} from './shared/Directives/dropdown.directive';
 import {RouterModule} from '@angular/router';
 import { TicketDetailComponent } from './tickets/ticket-detail/ticket-detail.component';
 import {AppRoutingModule} from './app-routing.module';
+import { TicketsListComponent } from './tickets/tickets-list/tickets-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {AppRoutingModule} from './app-routing.module';
     TicketsComponent,
     TicketEditComponent,
     DropdownDirective,
-    TicketDetailComponent
+    TicketDetailComponent,
+    TicketsListComponent
   ],
   imports: [
     BrowserModule,
