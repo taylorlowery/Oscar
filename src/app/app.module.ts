@@ -13,6 +13,7 @@ import {RouterModule} from '@angular/router';
 import { TicketDetailComponent } from './tickets/ticket-detail/ticket-detail.component';
 import {AppRoutingModule} from './app-routing.module';
 import { TicketsListComponent } from './tickets/tickets-list/tickets-list.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TicketsListComponent } from './tickets/tickets-list/tickets-list.compon
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

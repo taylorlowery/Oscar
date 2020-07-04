@@ -8,8 +8,9 @@ import {NgModule} from '@angular/core';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'tickets', component: TicketsComponent, children: [
+      { path: 'new', component: TicketEditComponent },
       { path: ':id', component: TicketDetailComponent},
-      { path: ':id/edit', component: TicketEditComponent}
+      { path: ':id/edit', component: TicketEditComponent},
     ]
   },
 ];

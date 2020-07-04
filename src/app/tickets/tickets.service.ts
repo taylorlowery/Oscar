@@ -11,7 +11,7 @@ export class TicketsService {
   private tickets: Ticket[] = [
     new Ticket('1', 'Problem with main page', 'Nothing Loads'),
     new Ticket('2', 'Add users', 'Need the option to create and edit users'),
-    new Ticket('3', 'Can\t close tickets', 'Need option to close tickets')
+    new Ticket('3', `Can't close tickets`, 'Need option to close tickets')
   ];
   constructor() { }
 
